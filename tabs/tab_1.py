@@ -7,13 +7,13 @@ tab_1_layout = html.Div([
     html.H1('Page 1'),
     html.Div([
         html.Div([
-            html.H6('Select one:'),
+            html.H6('Who will win the ALCS?'),
             dcc.Dropdown(
                 id='page-1-dropdown',
-                options=[{'label': i, 'value': i} for i in ['burger', 'fries', 'milkshake']],
-                value='burger',
+                options=[{'label': i, 'value': i} for i in ['Astros', 'Yankees']],
+                value='_____',
                 style = dict(
-                            width = '70%',
+                            width = '50%',
                             display = 'inline-block',
                             verticalAlign = "middle"
                             ),
