@@ -72,7 +72,7 @@ def page_2_radios(value):
 @app.callback(Output('page-3-content', 'children'),
               [Input('page-3-slider', 'value')])
 def page_3_slider(value):
-    return f'On a scale of 1-10, I like Python this much: {str(value)}'
+    return f'On a scale of -10 to 10, I like Python this much: {str(value)}'
 
 
 ############ Deploy
