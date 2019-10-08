@@ -7,14 +7,14 @@ tab_3_layout = html.Div([
     html.H1('Page 3'),
     html.Div([
         html.Div([
-            html.H6('How much do you like Python? (1-10)'),
+            html.H6('How much do you like Python? (-10 to 10)'),
             dcc.Slider(
                 id='page-3-slider',
-                min=1,
+                min=-10,
                 max=10,
                 step=0.5,
-                marks={i:str(i) for i in range(1, 11)},
-                value=5,
+                marks={i:str(i) for i in range(-10, 11)},
+                value=0,
             ),
         ], className='four columns'),
         html.Div([
